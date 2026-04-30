@@ -85,7 +85,7 @@ export default function AboutPage() {
               className="relative rounded-3xl overflow-hidden shadow-2xl border border-amber-900/50"
             >
               <img
-                src="./punjabiHouse.png"
+                src="./panjabiHouse.png"
                 alt="Chef cooking"
                 className="w-full h-full object-cover"
               />
