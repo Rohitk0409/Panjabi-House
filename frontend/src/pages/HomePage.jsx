@@ -87,11 +87,22 @@ export default function HomePage() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <button className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2">
+              <button
+                className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 cursor-pointer"
+                onClick={() => navigate("/menu")}
+              >
                 Explore Menu <ChevronRight size={18} />
               </button>
 
-              <button className="border border-white/40 px-6 py-3 rounded-xl hover:border-amber-400">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps/dir//Punjabi+House,+hub+of+chaap+and+curries,+Shop-19,+Shree+Brahma+Square+Complex,+behind+Ace+city,+noida+extension,+Sector-01,+Aimnabad,+Bisrakh+Jalalpur,+Greater+Noida,+Bisrakh+Jalalpur,+Uttar+Pradesh+201318/@28.5407201,77.4357733,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cefef4a99c401:0x37fc1792b7e0dbb9!2m2!1d77.4525317!2d28.5597551?entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D",
+                    "_blank",
+                  )
+                }
+                className="border border-white/40 px-6 py-3 rounded-xl hover:border-amber-400 hover:text-amber-400 transition cursor-pointer"
+              >
                 Visit Us
               </button>
             </div>
